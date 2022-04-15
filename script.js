@@ -1,6 +1,6 @@
 const choice = prompt("Choose between Deposit Money and Withdraw Money");
 
-let balance = 200 ; 
+let balance = -300 ; 
 
 if (choice === "Deposit") {
     const amount1 = Number(prompt("How much would you like to deposit"));
@@ -18,4 +18,10 @@ if (choice === "Deposit") {
         alert(`low funds!`); 
         alert(`you can't withdraw what you don't have. Not Today!`);
     }
+ } else if (choice === "Check Balance"){
+     if (balance>0) {
+        alert(`You still got moneeeyyyyyy!!!!`) ;
+     } else {
+        alert(`low funds!`); 
+     }
  }
